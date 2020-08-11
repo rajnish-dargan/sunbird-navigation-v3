@@ -1,0 +1,28 @@
+<div class="d-flex">
+<div class="container">
+  <div class="row d-flex align-items-center" style="border: 1px solid black;">
+    
+    <div class="d-flex justify-content-start">
+      <img src="{{navConfig.downloadImageUrl}}" style="width: 4rem;" (click)="downloadContent()">
+    </div>
+
+    <div class="d-flex justify-content-center ">
+      <div>{{navConfig.message}}</div>
+    </div>
+
+    <div class="p-5">
+      <span><input type="number" min="1" max="{{navConfig.totalIndex}}" [(ngModel)]="navConfig.currentIndex"  (ngModelChange)="onChange($event)"> / {{navConfig.totalIndex}}</span>
+    </div>
+
+    <div class="d-flex justify-content-end">
+      <button type="button" (click)="prevPage()">
+        <i><</i>
+      </button>
+      <button type="button" (click)="nextPage()">
+      <i>></i>  
+      </button>
+  </div>
+
+  </div>
+</div>
+</div>

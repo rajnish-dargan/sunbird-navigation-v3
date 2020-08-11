@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "navigation-player-v3": [
+        "dist/navigation-player-v3"
+      ],
+      "navigation-player-v3/*": [
+        "dist/navigation-player-v3/*"
+      ]
+    }
   }
 }
